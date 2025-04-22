@@ -1,0 +1,23 @@
+# Node.js modules
+/node_modules/
+
+# Environment variables file
+.env
+
+# Log files
+*.log
+
+# OS files (macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# npm package lock file (optional, but you might want to ignore this)
+package-lock.json
+
+# Build and distribution files (optional, if you have a build step)
+dist/
+build/
