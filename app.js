@@ -3,10 +3,18 @@ const app = express();
 
 app.use(express.json());
 const projectRoutes = require('./routes/projectRoutes');
-require('dotenv').config();
+const noteRoutes = require('./routes/noteRoutes');
 const authRoutes = require('./routes/authRoutes');
-app.use('/api/auth', authRoutes);
+const dashboardRoutes = require('./routes/dashboardRoutes');
+require('dotenv').config();
+const errorHandler = require('./middleware/errorHandler');
 
+// add after other routes
+app.use('/api/notes', noteRoutes);
+app.use('/api/auth', authRoutes);
 app.use('/api/projects', projectRoutes);
+app.use('/api/dashboard', dashboardRoutes);
+app.use(errorHandler);
+
 
 module.exports = app;
