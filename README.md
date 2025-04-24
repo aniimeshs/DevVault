@@ -14,7 +14,7 @@ DevVault is a developer-centric project tracker and notes app designed to help d
   - Create, update, and delete notes
   - Tag-based organization
   - Project-specific notes
-  - Search and filter notes
+  - Search, filter, and sort notes
 - Dashboard Statistics
   - Total projects count
   - Total notes count
