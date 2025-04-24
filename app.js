@@ -7,7 +7,7 @@ const noteRoutes = require("./src/routes/noteRoutes");
 const authRoutes = require("./src/routes/authRoutes");
 const dashboardRoutes = require("./src/routes/dashboardRoutes");
 require("dotenv").config();
-const errorHandler = require("./middleware/errorHandler");
+const errorHandler = require("./src/middleware/errorHandler");
 
 // add after other routes
 app.use("/api/notes", noteRoutes);

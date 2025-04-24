@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const noteController = require("../src/controllers/noteController");
+const noteController = require("../controllers/noteController");
 const authenticate = require("../middleware/auth");
 
 // All routes below are protected
